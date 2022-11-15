@@ -1,0 +1,31 @@
+.footer{
+
+  &__contacts-item:not(:last-child) {
+  margin-bottom: 9px;
+  }
+
+&__adds {
+  font-style: normal;
+  line-height: 1.71;
+  color: var(--white-color);
+  transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+  }
+}
+
+&__contact-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  color: rgba(255, 255, 255, 0.6);
+  transition: color var(--animation);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}

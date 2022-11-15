@@ -1,0 +1,56 @@
+.backdrop {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 10;
+  background-color: var(--overlay);
+  transition: opacity var(--animation), visibility var(--animation);
+
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  
+    & .modal {
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+    }
+  }
+}
+
+.modal {
+  width: 528px;
+  min-height: 581px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform var(--animation), border-radius var(--animation);
+
+  &-close {
+    width: 30px;
+    height: 30px;
+    background-color: var(--white-color);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    @include align-list;
+    justify-content: center;
+    cursor: pointer;
+    transition: fill var(--animation);
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-color);
+    }
+  }
+}

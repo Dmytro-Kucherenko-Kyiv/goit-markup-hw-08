@@ -1,0 +1,11 @@
+.header {
+  background: var(--white-color);
+  flex-direction: row;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--bottom-color);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 5;
+}

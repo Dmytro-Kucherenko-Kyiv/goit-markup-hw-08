@@ -1,0 +1,45 @@
+.main__features {
+  padding-top: 94px;
+}
+
+.features {
+
+  &__list {
+    height: 248px;
+    display: flex;
+    gap: 30px;
+  }
+
+  &__item {
+    width: 270px;
+
+    &:nth-child(2),
+    &:nth-child(3) {
+      height: 224px;
+    }
+  }
+
+  &__wrap {
+    width: 270px;
+    height: 120px;
+    margin-bottom: 30px;
+    background: var(--background-our-team);
+    border-radius: 4px;
+    @include align-list;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    color: var(--secondary-text-color);
+    margin-bottom: 10px;
+  }
+
+  &__text {
+    line-height: 1.71;
+    color: var(--primary-text-color);
+  }
+}
