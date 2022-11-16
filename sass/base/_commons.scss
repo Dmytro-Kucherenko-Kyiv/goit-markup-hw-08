@@ -26,3 +26,13 @@ main {
   clip-path: inset(50%);
   margin: -1px;
 }
+
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}

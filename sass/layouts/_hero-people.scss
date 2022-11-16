@@ -1,7 +1,7 @@
 .main__people {
   background: var(--background-our-team);
-  padding-top: 94px;
-  padding-bottom: 94px;
+/*   padding-top: 94px;
+  padding-bottom: 94px; */
   }
   
 .people {
@@ -15,6 +15,7 @@
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
     justify-content: space-evenly;
   }

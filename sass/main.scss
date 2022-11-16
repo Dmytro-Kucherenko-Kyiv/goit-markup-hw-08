@@ -1,28 +1,28 @@
-@import './utils/vars';
-@import './base/reset';
-@import './utils/mixins';
-@import './base/commons';
-@import './components/container';
+@import "./utils/vars";
+@import "./base/reset";
+@import "./utils/mixins";
+@import "./base/commons";
+@import "./components/container";
 
-@import './layouts/header';
-@import './layouts/header-logo';
-@import './layouts/header-navigation';
-@import './layouts/header-contacts';
+@import "./layouts/header";
+@import "./layouts/header-logo";
+@import "./layouts/header-navigation";
+@import "./layouts/header-contacts";
 
-@import './layouts/hero-banner';
-@import './layouts/hero-features';
-@import './layouts/hero-pictures';
-@import './layouts/hero-people';
-@import './layouts/hero-partners';
+@import "./layouts/hero-banner";
+@import "./layouts/hero-features";
+@import "./layouts/hero-pictures";
+@import "./layouts/hero-people";
+@import "./layouts/hero-partners";
 
-@import './layouts/portfolio-filter';
-@import './layouts/portfolio-grid';
+@import "./layouts/portfolio-filter";
+@import "./layouts/portfolio-grid";
 
-@import './layouts/footer';
-@import './layouts/footer-logo';
-@import './layouts/footer-contacts';
-@import './layouts/footer-networks';
-@import './layouts/footer-subscription';
+@import "./layouts/footer";
+@import "./layouts/footer-logo";
+@import "./layouts/footer-contacts";
+@import "./layouts/footer-networks";
+@import "./layouts/footer-subscription";
 
-@import './layouts/modal-window';
-@import './layouts/modal-window-content';
+@import "./layouts/modal-window";
+@import "./layouts/modal-window-content";
