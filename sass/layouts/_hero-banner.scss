@@ -7,7 +7,8 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  max-width: 1600px;
+  max-width: 100%;
+  /* max-width: 1600px; */
   margin: 0 auto;
 }
 
@@ -21,7 +22,7 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    width: 696px;
+    /* width: 696px; */
     margin: 0 auto;
   }
 

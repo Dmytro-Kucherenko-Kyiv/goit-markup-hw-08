@@ -1,24 +1,28 @@
 .main__partners {
-  padding-top: 94px;
-  padding-bottom: 94px;
+/*   padding-top: 94px;
+  padding-bottom: 94px; */
 }
 
 .icons {
 
   &__title {
-    @include font(700, 36px, 1.17, none);
+    /* @include font(700, 36px, 1.17, none); */
+    @include font(700, 28px, calc (33/28), none);
     text-align: center;
     color: var(--secondary-text-color);
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    /* margin-bottom: 50px; */
   }
 
   &__list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   &__item {
-    width: calc((100% - 150px) / 6);
+/*     width: calc((100% - 150px) / 6); */
+    width: calc((100% - 30px) / 2);
     height: 92px;
   }
 
