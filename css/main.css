@@ -65,7 +65,8 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--white-color);
-  padding-top: 80px;
+  /*   padding-top: 80px; */
+  padding-top: 60px;
 }
 
 main {
@@ -140,8 +141,10 @@ section {
 }
 
 .navigation__logo {
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  /*   padding-top: 24px;
+    padding-bottom: 25px; */
 }
 
 /*---------- modifier ----------*/
@@ -158,9 +161,21 @@ section {
 }
 
 .menu {
-  padding: 32px 318px 32px 93px;
-  display: flex;
-  gap: 50px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .menu {
+    padding: 32px 96px 32px 88px;
+    display: flex;
+    gap: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu {
+    padding: 32px 318px 32px 93px;
+    display: flex;
+    gap: 50px;
+  }
 }
 .menu__link {
   font-weight: 500;
@@ -190,13 +205,34 @@ section {
 }
 
 .navigation__contacts {
-  padding-top: 32px;
-  padding-bottom: 32px;
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .navigation__contacts {
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation__contacts {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
-.contacts__list {
-  display: flex;
-  gap: 30px;
+@media screen and (min-width: 768px) {
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__list {
+    display: flex;
+    gap: 30px;
+  }
 }
 .contacts__link {
   font-weight: 500;
@@ -215,7 +251,7 @@ section {
 
 .main__banner {
   background: var(--background-hero-footer);
-  padding: 200px 0;
+  /* padding: 200px 0; */
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -227,8 +263,10 @@ section {
 
 .banner__title {
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  /* font-size: 44px;
+  line-height: 1.36; */
+  font-size: 26px;
+  line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -590,19 +628,25 @@ footer {
 }
 
 address {
-  display: flex;
-  gap: 70px;
+  /*   display: flex;
+    gap: 70px; */
 }
 
 .footer__logo {
-  display: block;
-  margin-bottom: 20px;
+  /* display: block; */
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  /* margin-bottom: 20px; */
 }
 
 .footer__contacts-item:not(:last-child) {
-  margin-bottom: 9px;
+  /* margin-bottom: 9px; */
+  margin-bottom: 10px;
 }
 .footer__adds {
+  display: flex;
+  justify-content: center;
   font-style: normal;
   line-height: 1.71;
   color: var(--white-color);
@@ -612,6 +656,8 @@ address {
   color: var(--accent-color);
 }
 .footer__contact-link {
+  display: flex;
+  justify-content: center;
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
@@ -623,7 +669,9 @@ address {
 }
 
 .footer__soc {
-  margin-left: 70px;
+  /*   margin-left: 70px; */
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 .footer__soc-title {
   font-weight: 700;
@@ -632,6 +680,8 @@ address {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 .footer__soc-list {
   display: flex;
@@ -659,7 +709,7 @@ address {
 }
 
 .footer__subs {
-  margin-left: 93px;
+  /* margin-left: 93px; */
 }
 
 .subs__title {
@@ -669,14 +719,18 @@ address {
   text-transform: uppercase;
   color: var(--white-color);
   margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 .subs__wrap {
   margin-top: 20px;
-  display: flex;
+  /* display: flex; */
 }
 .subs__wrap-input {
-  width: 358px;
+  margin-bottom: 20px;
+  /* width: 358px; */
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
@@ -724,7 +778,8 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: 12px;
+  /* margin-left: 12px; */
+  margin: 0 auto;
   transition: background-color var(--animation);
 }
 .subs__btn:hover {
@@ -755,7 +810,11 @@ address {
 }
 
 .modal {
-  width: 528px;
+  /* width: 528px; */
+  width: 450px;
+  margin-top: 94px;
+  margin-bottom: 93px;
+  top: 0;
   min-height: 581px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -792,7 +851,9 @@ address {
   line-height: 1.15;
   color: var(--secondary-text-color);
   text-align: center;
+  margin: 0 auto;
   margin-top: 40px;
+  width: 360px;
 }
 .modal-form {
   margin-top: 12px;

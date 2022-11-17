@@ -6,7 +6,9 @@
     line-height: calc(23/20);
     color: var(--secondary-text-color);
     text-align: center;
+    margin: 0 auto;
     margin-top: 40px;
+    width: 360px;
   }
 
   &-form {
@@ -120,6 +122,7 @@
 }
 
 .checkbox {
+
 
   &-label {
     font-size: 14px;

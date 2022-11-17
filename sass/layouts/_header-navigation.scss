@@ -3,9 +3,19 @@
 }
 
 .menu {
-  padding: 32px 318px 32px 93px;
-  display: flex;
-  gap: 50px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    padding: 32px 96px 32px 88px;
+    display: flex;
+    gap: 50px;
+  }
+    
+  @media screen and (min-width: 1200px) {
+    padding: 32px 318px 32px 93px;
+    display: flex;
+    gap: 50px;
+  }
 
   &__link {
     font-weight: 500;
