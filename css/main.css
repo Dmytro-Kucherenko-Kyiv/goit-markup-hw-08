@@ -259,10 +259,10 @@ section {
   transition: background-color var(--animation);
 }
 
-.main__features {
-  /* padding-top: 94px; */
+/* .main__features {
+  padding-top: 94px;
 }
-
+ */
 .features__list {
   /* height: 226px; */
   display: flex;

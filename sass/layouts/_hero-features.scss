@@ -1,7 +1,7 @@
-.main__features {
-  /* padding-top: 94px; */
+/* .main__features {
+  padding-top: 94px;
 }
-
+ */
 .features {
   
   &__list {
@@ -29,7 +29,6 @@
   @media screen and (min-width: 1200px){
     width: calc((100% - 90px)/4);
   }
-
   }
 
   &__wrap {
