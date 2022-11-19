@@ -1,9 +1,24 @@
 .main__pictures {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0px;
+/*   padding-bottom: 94px; */
 }
 
 .pictures {
+
+  @media screen and (min-width: 0px) {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: block;
+  }
 
   &__title {
     @include font(700, 36px, 1.17, none);

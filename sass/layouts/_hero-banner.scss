@@ -1,23 +1,37 @@
 .main__banner {
   background: var(--background-hero-footer);
-  /* padding: 200px 0; */
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)),
-    url(../img/hero-bg.jpg);
+  padding: 118px 0;
+  background-image: var(--banner-gradient), url(../img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  /* max-width: 1600px; */
   margin: 0 auto;
+  @include retina {
+      background-image: var(--banner-gradient), url(../img/hero-bg-mob-2x.jpg);
+    }
+
+  @include tablet {
+    background-image: var(--banner-gradient), url(../img/hero-bg-tab.jpg);
+    @include retina {
+        background-image: var(--banner-gradient), url(../img/hero-bg-tab-2x.jpg);
+      }
+  }
+
+  @include desktop {
+    padding: 200px 0;
+    max-width: 1600px;
+    background-image: var(--banner-gradient), url(../img/hero-bg.jpg);
+    @include retina {
+        background-image: var(--banner-gradient), url(../img/hero-bg-2x.jpg);
+      }
+  }
 }
 
 .banner {
 
   &__title {
     font-weight: 900;
-    /* font-size: 44px;
-    line-height: 1.36; */
     font-size: 26px;
     line-height: 1.62;
 
@@ -25,8 +39,14 @@
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--white-color);
-    /* width: 696px; */
+    width: 360px;
     margin: 0 auto;
+
+    @include desktop {
+      width: 696px;
+      font-size: 44px;
+      line-height: 1.36;
+    }
   }
 
   &__button {

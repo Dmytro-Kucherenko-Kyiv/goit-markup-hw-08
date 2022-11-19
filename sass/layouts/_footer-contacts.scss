@@ -1,5 +1,8 @@
 .footer{
 
+  &__contacts{
+  }
+
   &__contacts-item:not(:last-child) {
   /* margin-bottom: 9px; */
   margin-bottom: 10px;

@@ -16,6 +16,7 @@
   --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   --modal-border-color: rgba(33, 33, 33, 0.2);
   --placeholder-color: rgba(117, 117, 117, 0.5);
+  --banner-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 p,
@@ -87,14 +88,22 @@ main {
   margin: -1px;
 }
 
-section {
-  padding-top: 60px;
-  padding-bottom: 60px;
+@media screen and (min-width: 480px) {
+  section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 @media screen and (min-width: 768px) {
   section {
     padding-top: 60px;
     padding-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -251,28 +260,59 @@ section {
 
 .main__banner {
   background: var(--background-hero-footer);
-  /* padding: 200px 0; */
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero-bg.jpg);
+  padding: 118px 0;
+  background-image: var(--banner-gradient), url(../img/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   max-width: 100%;
-  /* max-width: 1600px; */
   margin: 0 auto;
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .main__banner {
+    background-image: var(--banner-gradient), url(../img/hero-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__banner {
+    background-image: var(--banner-gradient), url(../img/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .main__banner {
+    background-image: var(--banner-gradient), url(../img/hero-bg-tab-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main__banner {
+    padding: 200px 0;
+    max-width: 1600px;
+    background-image: var(--banner-gradient), url(../img/hero-bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .main__banner {
+    background-image: var(--banner-gradient), url(../img/hero-bg-2x.jpg);
+  }
 }
 
 .banner__title {
   font-weight: 900;
-  /* font-size: 44px;
-  line-height: 1.36; */
   font-size: 26px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-  /* width: 696px; */
+  width: 360px;
   margin: 0 auto;
+}
+@media screen and (min-width: 1200px) {
+  .banner__title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 .banner__button {
   border: 0;
@@ -298,19 +338,17 @@ section {
   transition: background-color var(--animation);
 }
 
-/* .main__features {
-  padding-top: 94px;
+.main__features {
+  /* padding-top: 94px; */
 }
- */
+
 .features__list {
-  /* height: 226px; */
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
 }
 .features__item {
   width: 100%;
-  /* width: 270px; */
 }
 .features__item:nth-child(2), .features__item:nth-child(3) {
   height: 224px;
@@ -350,10 +388,30 @@ section {
 }
 
 .main__pictures {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 0px;
+  /*   padding-bottom: 94px; */
 }
 
+@media screen and (min-width: 0px) {
+  .pictures {
+    display: none;
+  }
+}
+@media screen and (min-width: 480px) {
+  .pictures {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .pictures {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .pictures {
+    display: block;
+  }
+}
 .pictures__title {
   font-weight: 700;
   font-size: 36px;
@@ -391,7 +449,6 @@ section {
 }
 
 .people__title {
-  /* @include font(700, 36px, 1.17, none); */
   font-weight: 700;
   font-size: 28px;
   line-height: calc 1.1785714286;
@@ -401,8 +458,16 @@ section {
   line-height: 33px;
   text-align: center;
   color: var(--secondary-text-color);
-  /* margin-bottom: 50px; */
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .people__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: none;
+    margin-bottom: 50px;
+  }
 }
 .people__list {
   display: flex;
@@ -413,7 +478,6 @@ section {
 .people__item {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  /* width: calc((100% - 90px)/4); */
   width: 100%;
   text-align: center;
 }
@@ -434,8 +498,12 @@ section {
   background: var(--white-color);
   padding-top: 30px;
   padding-bottom: 24px;
-  /* padding-bottom: 30px; */
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .people__wrap {
+    padding-bottom: 30px;
+  }
 }
 .people__name {
   font-weight: 500;
@@ -483,15 +551,22 @@ section {
 }
 
 .icons__title {
-  /* @include font(700, 36px, 1.17, none); */
   font-weight: 700;
   font-size: 28px;
-  line-height: calc 1.1785714286;
+  line-height: 1.17;
   letter-spacing: none;
   text-align: center;
   color: var(--secondary-text-color);
   margin-bottom: 30px;
-  /* margin-bottom: 50px; */
+}
+@media screen and (min-width: 1200px) {
+  .icons__title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    letter-spacing: none;
+    margin-bottom: 50px;
+  }
 }
 .icons__list {
   display: flex;
@@ -499,9 +574,22 @@ section {
   gap: 30px;
 }
 .icons__item {
-  /*     width: calc((100% - 150px) / 6); */
-  width: calc((100% - 30px) / 2);
   height: 92px;
+}
+@media screen and (min-width: 480px) {
+  .icons__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 768px) {
+  .icons__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .icons__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 .icons__link {
   width: 100%;
@@ -622,11 +710,11 @@ footer {
   max-width: 100%;
 }
 
-.footer__container {
-  /*   display: flex;
-    align-items: baseline; */
+/* .footer__container {
+  display: flex;
+  align-items: baseline;
 }
-
+ */
 address {
   /*   display: flex;
     gap: 70px; */

@@ -1,12 +1,11 @@
-/* .main__features {
-  padding-top: 94px;
+.main__features {
+
+  /* padding-top: 94px; */
 }
- */
+
 .features {
   
-  &__list {
-    /* height: 226px; */
-    
+  &__list {   
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
@@ -14,18 +13,17 @@
 
   &__item {
     width: 100%;
-    /* width: 270px; */
 
     &:nth-child(2),
     &:nth-child(3) {
       height: 224px;
     }
 
-  @media screen and (min-width: 768px){
+  @include tablet {
     width: calc((100% - 30px)/2);
   }
 
-  @media screen and (min-width: 1200px){
+  @include desktop {
     width: calc((100% - 90px)/4);
   }
   }

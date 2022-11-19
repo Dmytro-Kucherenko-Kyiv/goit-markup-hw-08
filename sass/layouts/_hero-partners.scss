@@ -6,12 +6,15 @@
 .icons {
 
   &__title {
-    /* @include font(700, 36px, 1.17, none); */
-    @include font(700, 28px, calc (33/28), none);
+    @include font(700, 28px, 1.17, none);
     text-align: center;
     color: var(--secondary-text-color);
     margin-bottom: 30px;
-    /* margin-bottom: 50px; */
+
+    @include desktop {
+      @include font(700, 36px, 1.17, none);
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -21,10 +24,20 @@
   }
 
   &__item {
-/*     width: calc((100% - 150px) / 6); */
-    width: calc((100% - 30px) / 2);
     height: 92px;
+
+  @include mobile {
+    width: calc((100% - 30px) / 2);
   }
+
+  @include tablet {
+    width: calc((100% - 60px) / 3);
+  }
+
+  @include desktop {
+    width: calc((100% - 150px) / 6);
+  }
+}
 
   &__link {
     width: 100%;
