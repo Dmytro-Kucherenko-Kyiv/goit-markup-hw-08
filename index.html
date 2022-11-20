@@ -22,17 +22,22 @@
 </head>
 
 <body>
-<!--     <header class="header">
+    <header class="header">
     <div class="container header__container">
       <nav class="navigation header__navigation">
         <a class="logo navigation__logo" href="index.html"> Web<span class="logo--color-light">Studio</span></a>
-        <ul class="menu">
+        <button class="menu__open" type="button">
+          <svg width="40" height="40">
+            <use href="./img/icons.svg#icon-mob-menu"></use>
+          </svg>
+        </button>
+<!--         <ul class="menu">
           <li class="menu__item"><a class="menu__link current" href="index.html">Студія</a></li>
           <li class="menu__item"><a class="menu__link" href="portfolio.html">Портфоліо</a></li>
           <li class="menu__item"><a class="menu__link" href="#contacts">Контакти</a></li>
-        </ul>
+        </ul> -->
 
-        <div class="navigation__contacts">
+<!--         <div class="navigation__contacts">
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -51,17 +56,86 @@
               </a>
             </li>
           </ul>
-        </div>
-
-        <button type="button">
-          <svg width="24" height="16"> 
-            <use href="./img/icons.svg#icon-"></use>
-          </svg>
-        </button>
+        </div> -->
 
       </nav>
     </div>
-  </header> -->
+
+<!-- MOBIL-MENU -->
+
+    <div class="mob__menu">
+      <button class="menu__close" type="button">
+        <svg width="40" height="40">
+          <use href="./img/icons.svg#icon-mob-close"></use>
+        </svg>
+      </button>
+
+      <ul class="mob__menu-list">
+        <li class="mob__menu-item"><a class="mob__menu-link current" href="index.html">Студія</a></li>
+        <li class="mob__menu-item"><a class="mob__menu-link" href="portfolio.html">Портфоліо</a></li>
+        <li class="mob__menu-item"><a class="mob__menu-link" href="#contacts">Контакти</a></li>
+      </ul>
+
+      <div class="mob__contacts">
+        <ul class="mob__contacts-list">
+          <li class="mob__contacts-item">
+            <a class="mob__contacts-link" href="mailto:info@devstudio.com">
+              <svg width="16" height="12">
+                <use href="./img/icons.svg#icon-mail-icon"></use>
+              </svg>
+              info@devstudio.com
+            </a>
+          </li>
+          <li class="mob__contacts-item">
+            <a class="mob__contacts-link" href="tel:+380961111111">
+              <svg width="10" height="16">
+                <use href="./img/icons.svg#icon-phone-icon"></use>
+              </svg>
+              +38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="mob__soc">
+        <ul class="mob__soc-list">
+          
+          <li class="mob__soc-item">
+            <a href="" class="mob__soc-link">
+              <svg class="mob__soc-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+            
+          <li class="mob__soc-item">
+            <a href="" class="mob__soc-link">
+              <svg class="mob__soc-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+            
+          <li class="mob__soc-item">
+            <a href="" class="mob__soc-link">
+              <svg class="mob__soc-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+            
+          <li class="mob__soc-item">
+            <a href="" class="mob__soc-link">
+              <svg class="mob__soc-icon" width="20" height="20">
+                <use href="./img/icons.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
 
   <main>
     <section class="banner main__banner">
@@ -182,7 +256,7 @@
                 
                 media="(min-width: 320px)">
 
-                <img class="people__img" src="img/teammate-1.jpg" alt="Член команди 1" width="450">
+                <img class="people__img" src="img/teammate-1-mob.jpg" alt="Член команди 1" width="450">
             </picture>
 
             <div class="people__wrap">
@@ -245,7 +319,7 @@
                 
                 media="(min-width: 320px)">
             
-              <img class="people__img" src="img/teammate-2.jpg" alt="Член команди 2" width="450">
+              <img class="people__img" src="img/teammate-2-mob.jpg" alt="Член команди 2" width="450">
             </picture>
             <div class="people__wrap">
               <h3 class="people__name">Ольга Рєпіна</h3>
@@ -294,7 +368,7 @@
                 img/teammate-3-2x.jpg 2x" 
                 
                 media="(min-width: 1200px)">
-                
+
               <source srcset="
                 img/teammate-3-tab.jpg 1x,
                 img/teammate-3-tab-2x.jpg 2x" 
@@ -307,7 +381,7 @@
                 
                 media="(min-width: 320px)">
             
-              <img class="people__img" src="img/teammate-3.jpg" alt="Член команди 3" width="450">
+              <img class="people__img" src="img/teammate-3-mob.jpg" alt="Член команди 3" width="450">
             </picture>
             <div class="people__wrap">
               <h3 class="people__name">Микола Тарасов</h3>
@@ -370,7 +444,7 @@
                 
                 media="(min-width: 320px)">
             
-              <img class="people__img" src="img/teammate-4.jpg" alt="Член команди 4" width="450">
+              <img class="people__img" src="img/teammate-4-mob.jpg" alt="Член команди 4" width="450">
             </picture>
             <div class="people__wrap">
               <h3 class="people__name">Михайло Єрмаков</h3>
