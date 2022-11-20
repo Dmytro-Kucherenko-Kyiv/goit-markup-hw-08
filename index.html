@@ -26,7 +26,7 @@
     <div class="container header__container">
       <nav class="navigation header__navigation">
         <a class="logo navigation__logo" href="index.html"> Web<span class="logo--color-light">Studio</span></a>
-        <button class="menu__open" type="button">
+        <button class="menu__open" type="button" data-modal-open>
           <svg width="40" height="40">
             <use href="./img/icons.svg#icon-mob-menu"></use>
           </svg>
@@ -63,8 +63,8 @@
 
 <!-- MOBIL-MENU -->
 
-    <div class="mob__menu">
-      <button class="menu__close" type="button">
+    <div class="mob__menu visually-hidden" data-modal>
+      <button class="menu__close" type="button" data-modal-close>
         <svg width="40" height="40">
           <use href="./img/icons.svg#icon-mob-close"></use>
         </svg>
