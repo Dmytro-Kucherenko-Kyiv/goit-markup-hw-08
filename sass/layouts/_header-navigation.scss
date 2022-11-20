@@ -17,19 +17,6 @@
     gap: 50px;
   }
 
-  &__open {
-    margin-left: auto;
-    background-color: transparent;
-    border-color: transparent;
-    fill: var(--secondary-text-color);
-    transition: fill var(--animation);
-
-    &:hover,
-    &:focus {
-      fill: var(--accent-color);
-    }
-  }
-
   &__close {
     margin-left: auto;
     background-color: transparent;
@@ -76,46 +63,3 @@
     position: absolute;
   }
 }
-
-/* ----- MOBIL-MENU ----- */
-
-.mob__menu {
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  position: fixed;
-
-  background-color: var(--white-color);
-
-  padding: 48px 40px;
-}
-
-.mob__menu {}
-
-.menu__close {}
-
-.mob__menu-list {}
-
-.mob__menu-item {}
-
-.mob__menu-link {}
-
-.current {}
-
-.mob__contacts {}
-
-.mob__contacts-list {}
-
-.mob__contacts-item {}
-
-.mob__contacts-link {}
-
-.mob__soc {}
-
-.mob__soc-list {}
-
-.mob__soc-item {}
-
-.mob__soc-link {}
-
-.mob__soc-icon {}

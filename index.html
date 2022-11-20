@@ -26,18 +26,18 @@
     <div class="container header__container">
       <nav class="navigation header__navigation">
         <a class="logo navigation__logo" href="index.html"> Web<span class="logo--color-light">Studio</span></a>
-        <button class="menu__open" type="button" data-modal-open>
+        <button class="menu__open" type="button" data-menu-open>
           <svg width="40" height="40">
             <use href="./img/icons.svg#icon-mob-menu"></use>
           </svg>
         </button>
-<!--         <ul class="menu">
+        <ul class="menu">
           <li class="menu__item"><a class="menu__link current" href="index.html">Студія</a></li>
           <li class="menu__item"><a class="menu__link" href="portfolio.html">Портфоліо</a></li>
           <li class="menu__item"><a class="menu__link" href="#contacts">Контакти</a></li>
-        </ul> -->
+        </ul>
 
-<!--         <div class="navigation__contacts">
+        <div class="navigation__contacts">
           <ul class="contacts__list">
             <li class="contacts__item">
               <a class="contacts__link" href="mailto:info@devstudio.com">
@@ -56,43 +56,37 @@
               </a>
             </li>
           </ul>
-        </div> -->
+        </div>
 
       </nav>
     </div>
 
 <!-- MOBIL-MENU -->
 
-    <div class="mob__menu visually-hidden" data-modal>
-      <button class="menu__close" type="button" data-modal-close>
+    <div class="mob__menu is-hidden" data-menu>
+    <div class="mob__menu-container">
+      <div class="mob__menu-top">
+      <button class="menu__close" type="button" data-menu-close>
         <svg width="40" height="40">
           <use href="./img/icons.svg#icon-mob-close"></use>
         </svg>
       </button>
 
       <ul class="mob__menu-list">
-        <li class="mob__menu-item"><a class="mob__menu-link current" href="index.html">Студія</a></li>
+        <li class="mob__menu-item"><a class="mob__menu-link" href="index.html">Студія</a></li>
         <li class="mob__menu-item"><a class="mob__menu-link" href="portfolio.html">Портфоліо</a></li>
         <li class="mob__menu-item"><a class="mob__menu-link" href="#contacts">Контакти</a></li>
       </ul>
+      </div>
 
+      <div class="mob__menu-bottom">
       <div class="mob__contacts">
         <ul class="mob__contacts-list">
           <li class="mob__contacts-item">
-            <a class="mob__contacts-link" href="mailto:info@devstudio.com">
-              <svg width="16" height="12">
-                <use href="./img/icons.svg#icon-mail-icon"></use>
-              </svg>
-              info@devstudio.com
-            </a>
+            <a class="mob__contacts-link mob__tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
-          <li class="mob__contacts-item">
-            <a class="mob__contacts-link" href="tel:+380961111111">
-              <svg width="10" height="16">
-                <use href="./img/icons.svg#icon-phone-icon"></use>
-              </svg>
-              +38 096 111 11 11
-            </a>
+          <li class="mob__contacts-item mob__mail">
+            <a class="mob__contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
         </ul>
       </div>
@@ -101,37 +95,23 @@
         <ul class="mob__soc-list">
           
           <li class="mob__soc-item">
-            <a href="" class="mob__soc-link">
-              <svg class="mob__soc-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-instagram"></use>
-              </svg>
-            </a>
+            <a href="" class="mob__soc-link">Instagram</a>
           </li>
             
           <li class="mob__soc-item">
-            <a href="" class="mob__soc-link">
-              <svg class="mob__soc-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-twitter"></use>
-              </svg>
-            </a>
+            <a href="" class="mob__soc-link">Twitter</a>
           </li>
             
           <li class="mob__soc-item">
-            <a href="" class="mob__soc-link">
-              <svg class="mob__soc-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-facebook"></use>
-              </svg>
-            </a>
+            <a href="" class="mob__soc-link">Facebook</a>
           </li>
             
           <li class="mob__soc-item">
-            <a href="" class="mob__soc-link">
-              <svg class="mob__soc-icon" width="20" height="20">
-                <use href="./img/icons.svg#icon-linkedin"></use>
-              </svg>
-            </a>
+            <a href="" class="mob__soc-link">LinkedIn</a>
           </li>
         </ul>
+      </div>
+      </div>
       </div>
     </div>
 
@@ -546,7 +526,7 @@
     </section>
   </main>
 
-<!--     <footer>
+    <footer>
     <div class="container footer__container">
       <div class="footer__contacts">
         <a class="logo footer__logo" href="index.html"> Web<span class="logo--color-dark">Studio</span></a>
@@ -616,9 +596,9 @@
         </form>
       </div>
     </div>
-  </footer> -->
+  </footer>
 
-<!--     <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
     <div class="modal" data-modal-open>
       <button type="button" class="modal-close" data-modal-close>
         <svg class="modal-close-icon" width="14" height="14">
@@ -683,8 +663,9 @@
       </form>
     </div>
 
-  </div> -->
+  </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 
 </body>
 
