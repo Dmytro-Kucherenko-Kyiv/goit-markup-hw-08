@@ -298,8 +298,6 @@ main {
 }
 
 .menu__close {
-  width: 40px;
-  height: 40px;
   position: absolute;
   top: 10px;
   right: 15px;
@@ -947,12 +945,10 @@ footer {
 }
 
 .footer__contacts-item:not(:last-child) {
-  margin-bottom: 10px;
-}
-@media screen and (min-width: 1200px) {
-  .footer__contacts-item:not(:last-child) {
-    margin-bottom: 9px;
-  }
+  margin-bottom: 12px;
+  /*   @include desktop {
+      margin-bottom: 9px;
+    } */
 }
 .footer__adds {
   display: flex;
@@ -983,11 +979,21 @@ footer {
   color: var(--accent-color);
 }
 
+.footer__soc {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  /*   margin-left: 70px; */
+}
+@media screen and (min-width: 768px) {
+  .footer__soc {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer__soc {
-    /*   margin-left: 70px; */
-    /*   margin-top: 60px;
-      margin-bottom: 60px; */
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 }
 .footer__soc-title {
@@ -1074,6 +1080,7 @@ footer {
 .subs__wrap-input {
   margin-bottom: 20px;
   min-width: 358px;
+  width: 100%;
   height: 50px;
   padding-left: 16px;
   padding-right: 16px;
@@ -1104,11 +1111,6 @@ footer {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .subs__wrap {
-    width: 100%;
-  }
 }
 @media screen and (min-width: 768px) {
   .subs__wrap {
