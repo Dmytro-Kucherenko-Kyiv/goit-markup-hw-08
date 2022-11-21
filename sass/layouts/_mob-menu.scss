@@ -6,6 +6,14 @@
   fill: var(--secondary-text-color);
   transition: fill var(--animation);
 
+  @include tablet {
+    display: none;
+  }
+
+  @include desktop {
+    display: none;
+  }
+
   &:hover,
   &:focus {
       fill: var(--accent-color);

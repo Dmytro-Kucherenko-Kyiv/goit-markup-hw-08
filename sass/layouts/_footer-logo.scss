@@ -1,12 +1,18 @@
 address {
-/*   display: flex;
-  gap: 70px; */
+  @include desktop {
+  display: flex;
+  gap: 70px;
+  }
 }
 
 .footer__logo {
-  /* display: block; */
   display: flex;
   justify-content: center;
   margin-bottom: 28px;
-  /* margin-bottom: 20px; */
+
+
+  @include desktop {
+    display: block;
+    margin-bottom: 20px;
   }
+}

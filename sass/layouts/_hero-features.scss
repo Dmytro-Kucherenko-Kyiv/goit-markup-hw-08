@@ -47,6 +47,14 @@
     margin-bottom: 10px;
 
     text-align: center;
+
+    @include tablet {
+      text-align: start;
+    }
+
+    @include desktop{
+      text-align: start;
+    }    
   }
 
   &__text {

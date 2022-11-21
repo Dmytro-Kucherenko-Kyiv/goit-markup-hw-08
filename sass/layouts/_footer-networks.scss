@@ -1,9 +1,14 @@
 .footer{
 
   &__soc {
+
+  @include desktop {
+
   /*   margin-left: 70px; */
-  margin-top: 60px;
-  margin-bottom: 60px;
+  
+/*   margin-top: 60px;
+  margin-bottom: 60px; */
+  }
 
   &-title {
     font-weight: 700;
@@ -12,9 +17,12 @@
     text-transform: uppercase;
     color: var(--white-color);
     margin-bottom: 20px;
-
     display: flex;
     justify-content: center;
+
+    @include desktop {
+      display: block;
+    }
   }
 
   &-list {

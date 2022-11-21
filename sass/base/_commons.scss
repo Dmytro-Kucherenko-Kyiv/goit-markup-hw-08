@@ -7,8 +7,14 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   background-color: var(--white-color);
-/*   padding-top: 80px; */
-  padding-top: 60px;
+
+  @include tablet {
+    padding-top: 80px;
+  }
+
+  @include desktop {
+    padding-top: 80px;
+  }
 }
 
 main {

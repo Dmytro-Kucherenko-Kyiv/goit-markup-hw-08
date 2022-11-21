@@ -1,17 +1,29 @@
 .logo {
   font-family: 'Raleway';
   font-weight: 700;
+  font-size: 24px;
+  line-height: calc(28 / 24);
+  color: var(--accent-color);
+
+  @include desktop {
   font-size: 26px;
   line-height: 1.19;
-  color: var(--accent-color);
+  }
 }
 
 .navigation__logo {
   padding-top: 16px;
   padding-bottom: 16px;
 
-/*   padding-top: 24px;
-  padding-bottom: 25px; */
+  @include tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @include desktop {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 /*---------- modifier ----------*/

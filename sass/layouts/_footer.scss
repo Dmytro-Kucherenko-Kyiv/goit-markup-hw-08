@@ -5,8 +5,27 @@ footer {
   max-width: 100%;
 }
 
-/* .footer__container {
-  display: flex;
-  align-items: baseline;
+.footer__container {
+  @include tablet {
+/*     display: flex;
+    align-items: baseline; */
+  }
+
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+  }
 }
- */
+
+.tablet__wrap {
+  @include tablet {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  gap: 165px;
+  }
+
+  @include desktop {
+  gap: 70px;
+  }
+}
