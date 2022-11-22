@@ -20,8 +20,8 @@
 }
 
 .modal {
-  width: 450px;
-  height: 609px;
+/*   width: 450px;
+  height: 609px; */
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -33,6 +33,14 @@
   bottom: 50%;
   transform: translate(-50%, -50%);
   transition: transform var(--animation), border-radius var(--animation);
+
+  @media screen and (max-width: 1199px) {
+    height: 95%;
+    width: 95%;
+    max-height: 609px;
+    max-width: 450px;
+    overflow: scroll;
+  }
 
   @include desktop {
     width: 528px;
