@@ -10,10 +10,6 @@
     display: none;
   }
 
-  @include desktop {
-    display: none;
-  }
-
   &:hover,
   &:focus {
       fill: var(--accent-color);

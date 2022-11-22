@@ -3,14 +3,8 @@
   &__soc {
   margin-top: 60px;
   margin-bottom: 60px;
-  /*   margin-left: 70px; */
 
   @include tablet {
-  margin-top: 0px;
-  margin-bottom: 0px;
-  }
-
-  @include desktop {
   margin-top: 0px;
   margin-bottom: 0px;
   }

@@ -6,10 +6,6 @@ footer {
 }
 
 .footer__container {
-  @include tablet {
-/*     display: flex;
-    align-items: baseline; */
-  }
 
   @include desktop {
     display: flex;
@@ -18,6 +14,7 @@ footer {
 }
 
 .tablet__wrap {
+  
   @include tablet {
   display: flex;
   justify-content: center;

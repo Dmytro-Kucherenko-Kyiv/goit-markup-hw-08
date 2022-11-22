@@ -11,10 +11,6 @@ body {
   @include tablet {
     padding-top: 80px;
   }
-
-  @include desktop {
-    padding-top: 80px;
-  }
 }
 
 main {
@@ -41,15 +37,8 @@ main {
 }
 
 section {
-  @include mobile {
   padding-top: 60px;
   padding-bottom: 60px;
-  }
-
-  @include tablet {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
 
   @include desktop {
     padding-top: 94px;

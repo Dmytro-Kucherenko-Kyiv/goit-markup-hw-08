@@ -1,8 +1,6 @@
 .main__people {
   background: var(--background-our-team);
-/*   padding-top: 94px;
-  padding-bottom: 94px; */
-  }
+}
   
 .people {
 
@@ -15,10 +13,10 @@
     color: var(--secondary-text-color);
     margin-bottom: 30px;
 
-  @include desktop {
-    @include font(700, 36px, 1.17, none);
-    margin-bottom: 50px;
-  }
+    @include desktop {
+      @include font(700, 36px, 1.17, none);
+      margin-bottom: 50px;
+    }
   }
 
   &__list {
@@ -53,9 +51,9 @@
     padding-bottom: 24px;
     align-items: center;
 
-  @include desktop {
-    padding-bottom: 30px;
-  }
+    @include desktop {
+      padding-bottom: 30px;
+    }
   }
 
   &__name {

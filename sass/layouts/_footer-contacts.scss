@@ -1,11 +1,7 @@
 .footer{
 
   &__contacts-item:not(:last-child) {
-  margin-bottom: 12px;
-
-/*   @include desktop {
-    margin-bottom: 9px;
-  } */
+    margin-bottom: 12px;
   }
 
 &__adds {
