@@ -711,6 +711,7 @@ section {
 .icons__list {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
 }
 .icons__item {

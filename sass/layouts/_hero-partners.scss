@@ -15,11 +15,14 @@
   &__list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 30px;
   }
 
   &__item {
     height: 92px;
+
+  
 
   @include mobile {
     width: calc((100% - 30px) / 2);
