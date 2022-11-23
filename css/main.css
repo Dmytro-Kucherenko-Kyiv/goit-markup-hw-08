@@ -754,16 +754,44 @@ section {
 }
 
 .galary__main {
-  padding-bottom: 94px;
-  padding-top: 94px;
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .galary__main {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .galary__container {
-  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .galary__container {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .galary__container {
+    margin-bottom: 50px;
+  }
 }
 .galary__list {
+  max-width: 320px;
   display: flex;
-  gap: 8px;
-  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 15px;
+  -moz-column-gap: 8px;
+       column-gap: 8px;
+  justify-content: start;
+}
+@media screen and (min-width: 768px) {
+  .galary__list {
+    justify-content: center;
+    max-width: 100%;
+  }
 }
 .galary__btn {
   border: 0;
@@ -793,15 +821,40 @@ section {
 .grid__list {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-evenly;
   gap: 30px;
+}
+.grid__item {
+  max-width: 450px;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .grid__item {
+    width: calc((100% - 30px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .grid__item {
+    width: calc((100% - 60px) / 3);
+  }
+}
+@media screen and (min-width: 768px) {
+  .grid__item:last-child {
+    margin-right: auto;
+  }
 }
 .grid__item:hover .product__text {
   transform: translateY(0);
 }
+.grid__link {
+  height: 100%;
+  display: flex;
+}
 
 .product {
   transition: box-shadow var(--animation);
+  display: flex;
+  flex-direction: column;
 }
 .product:hover, .product:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -815,7 +868,7 @@ section {
   position: absolute;
   top: 0;
   left: 0;
-  padding: 63px 24px;
+  padding: 77px 24px;
   color: var(--white-color);
   font-size: 18px;
   line-height: 1.56;
@@ -824,11 +877,23 @@ section {
   transform: translateY(100%);
   transition: transform var(--animation);
   overflow: auto;
+  text-align: left;
+}
+@media screen and (min-width: 768px) {
+  .product__text {
+    padding: 49px 24px 77px 24px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .product__text {
+    padding: 63px 24px;
+  }
 }
 .product__description {
   background: var(--white-color);
   padding: 20px 24px;
   border: 1px solid #EEEEEE;
+  flex-grow: 1;
 }
 
 .description__name {
@@ -836,11 +901,13 @@ section {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  text-align: left;
   color: var(--secondary-text-color);
 }
 .description__text {
   font-size: 16px;
   line-height: 1.88;
+  text-align: left;
   color: var(--primary-text-color);
 }
 

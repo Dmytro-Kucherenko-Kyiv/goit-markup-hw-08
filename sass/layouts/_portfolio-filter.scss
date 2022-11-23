@@ -1,18 +1,41 @@
 .galary {
 
   &__main {
-  padding-bottom: 94px;
-  padding-top: 94px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+
+    @include desktop {
+      padding-bottom: 94px;
+      padding-top: 94px;
+    }
   }
 
   &__container {
+    margin-top: 60px;
+    margin-bottom: 40px;
+
+    @include tablet {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    }
+
+    @include desktop {
     margin-bottom: 50px;
+    }
   }
 
   &__list {
+    max-width: 320px;
     display: flex;
-    gap: 8px;
-    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 8px;
+    justify-content: start;
+    
+    @include tablet {
+      justify-content: center;
+      max-width: 100%;
+    }
   }
 
   &__btn {
