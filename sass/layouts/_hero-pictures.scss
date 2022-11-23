@@ -4,7 +4,7 @@
 
 .pictures {
 
-  @include mobile {
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 
@@ -20,15 +20,15 @@
   }
 
   &__list {
-      display: flex;
-      gap: 30px;
-      justify-content: space-evenly;
-    }
-  
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+  }
+
   &__wrap {
     position: relative;
-    }
-  
+  }
+
   &__text {
     position: absolute;
     bottom: 0;
